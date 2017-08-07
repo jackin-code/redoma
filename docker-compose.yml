@@ -1,0 +1,109 @@
+version: '2'
+services:
+#  app:
+#    image: app:latest
+#    build:
+#      context: .
+#      dockerfile: docker/app/Dockerfile
+#    hostname: app
+#    env_file:
+#      - ./docker/app/env
+#    ports:
+#      - "3000:3000"
+#      - "8082:8080"
+#      - "8081:8081"
+#    depends_on:
+##      - zookeeper
+##      - kafka
+#      - mongodb
+##      - mysql
+#      - embedded2Mongo
+#      - connect
+#  connect:
+#      image: debezium/connect:0.4
+#      hostname: connect
+#      environment:
+#        BOOTSTRAP_SERVERS: kafka:9092
+#      env_file:
+#        - ./docker/connect/env
+#      links:
+#        - kafka
+#      depends_on:
+#        - zookeeper
+#        - kafka
+#        - mongodb
+#        - mysql
+#  zookeeper:
+#    image: debezium/zookeeper:0.4
+#    hostname: zookeeper
+#    ports:
+#      - "2181:2181"
+#      - "2888:2888"
+#      - "3888:3888"
+#  kafka:
+#    image: debezium/kafka:0.4
+#    hostname: kafka
+#    ports:
+#      - "9092:9092"
+#    env_file:
+#      - ./docker/kafka/env
+#    environment:
+#      ZOOKEEPER_CONNECT: zookeeper:2181
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#    depends_on:
+#      - zookeeper
+  mongodb:
+    image: mongo:3.2
+    hostname: mongodb
+    ports:
+      - "27017:27017"    
+    volumes:
+      - ./docker/mongo/data:/data/db
+      - ./docker/mongo/mongod.conf.orig:/etc/mongod.conf.orig
+      - ./docker/mongo/logs/:/var/log/mongodb/
+#  oracle:
+#    image: sath89/oracle-xe-11g
+#    hostname: oracle
+#    container_name: oracle
+#    ports:
+#      - 1521:1521
+#    volumes:
+#      - ./docker/oracle/data:/u01/app/oracle
+#    build:
+#     context: docker/oracle
+#     dockerfile: docker/Dockerfile
+#  mysql:
+#    image: tjworks/redoma-mysql:latest
+#    hostname: mysql
+#    ports:
+#      - "3306:3306"
+#    env_file:
+#      - ./docker/mysql/mysql-docker.env
+#    volumes:
+#      - ./docker/mysql/logs/:/var/log/mysql/
+#    build:
+#      context: docker/mysql
+#      dockerfile: Dockerfile
+  embedded2Mongo:
+    image: jackin/embedded2mongo:latest
+    hostname: localhost
+    ports:
+      - "9999:9999"
+    volumes:
+      - ./docker/embedded2Mongo/resources/application.yml:/application.yml
+    depends_on:
+     - mongodb
+#     - mysql
+#     - oracle
+    build:
+     context: docker/embedded2Mongo
+     dockerfile: docker/Dockerfile
+#    env_file:
+#      - ./docker/mysql/mysql-docker.env
+#    volumes:
+#      - ./docker/mysql/logs/:/var/log/mysql/
+#    build:
+#      context: docker/mysql
+#      dockerfile: Dockerfile
+

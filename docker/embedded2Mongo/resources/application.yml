@@ -1,0 +1,48 @@
+spring:
+   data:
+      mongodb:
+          host: mongodb
+          port: 27017
+          database: redoma
+          authenticationDatabase: redoma
+
+system:
+    embedded:
+      storePath: /
+    threshold: 1000
+    instanceNo: store-1001
+server:
+  port: 9999
+#spring:
+#    data:
+#    mongodb:
+#      uri: mongodb://mongo1.example.com:12345
+
+#spring:
+#   replSet:
+#      mongo:
+#         username: basketball
+#         password: basketball
+#         hosts: 120.77.223.33
+#         ports: 27017
+#         minConnectionsPerHost: 10
+#         maxConnectionsPerHost: 100
+#         maxWaitTime: 500
+#         minConnectionIdleTime: 10
+#         maxConnectionIdleTime: 2000
+#         connectTimeout: 100000
+#         socketTimeout: 100000
+#         threadsAllowedToBlockForConnectionMultiplier: 500
+#         auth: false
+
+#embedded:
+#   name: my-sql-connector
+#   offsetStorageFileFilename: e:\\offset.dat
+#   offsetFlushIntervalMs: 60000
+#   databaseHostname: redoma.osamayor.net
+#   databasePort: 3307
+#   databaseUser: root
+#   databasePassword: redoma
+#   serverId: 223344
+#   databaseServerName: my-app-connector
+#   databaseHistoryFileFilename: e:\\dbhistory.dat
