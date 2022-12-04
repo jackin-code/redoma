@@ -13,14 +13,14 @@ body:
     validations:
       required: true
   - type: textarea
-    id: Data Source Installation
+    id: Data-Source-Installation
     attributes:
       label: Data Source Installation
       value: 'xxxxxxxxxxxxxxxx'
     validations:
       required: true
   - type: textarea
-    id: Known Issues
+    id: Known-Issues
     label: Known Issues
     attributes:
       label: Data Source Installation
