@@ -7,12 +7,21 @@ assignees:
 body:
   - type: textarea
     id: Requirement
+    label: Requirement
     attributes:
       value: 'xxxxxxxxxxxxx'
     validations:
       required: true
   - type: textarea
     id: Data Source Installation
+    label: Data Source Installation
+    attributes:
+      value: 'xxxxxxxxxxxxxxxx'
+    validations:
+      required: true
+  - type: textarea
+    id: Known Issues
+    label: Known Issues
     attributes:
       value: 'xxxxxxxxxxxxxxxx'
     validations:
