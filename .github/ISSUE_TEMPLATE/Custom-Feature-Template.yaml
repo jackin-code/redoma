@@ -62,10 +62,10 @@ body:
     attributes:
       label: 作为目标时候的数据库配置 Configuration Notes for Target
   - type: textarea
-    id: config-for-target
+    id: type-mappings
     attributes:
       label: 类型映射表 Type Mappings
   - type: textarea
-    id: config-for-target
+    id: change-log
     attributes:
       label: 版本历史 Change Log
