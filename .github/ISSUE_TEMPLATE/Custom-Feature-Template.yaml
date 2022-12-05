@@ -4,17 +4,9 @@ title: "Connector Configuration Guide"
 labels: ["bug"]
 body:
   - type: textarea
-    id: Requirement
+    id: basic-info
     attributes:
-      label: Requirement
-      value: 'xxxxxxxxxxxxx'
-    validations:
-      required: true
-  - type: textarea
-    id: Data-Source-Installation
-    attributes:
-      label: Data Source Installation
-      value: 'xxxxxxxxxxxxxxxx'
+      label: Basic Information
     validations:
       required: true
   - type: textarea
