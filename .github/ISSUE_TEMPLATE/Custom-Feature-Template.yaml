@@ -20,8 +20,7 @@ body:
   - type: textarea
     id: Known-Issues
     attributes:
-      label: Data Source Installation
-      value: 'xxxxxxxxxxxxxxxx'
+      label: 已知问题列表 Known Issues
     validations:
       required: true
   - type: checkboxes
@@ -54,3 +53,19 @@ body:
         - label: 创建索引 target-feature-create-index
         - label: 删除索引 target-feature-drop-index
         - label: DDL读取 source-feature-ddl
+   - type: textarea
+    id: config-for-source
+    attributes:
+      label: 作为源时候的数据库配置 Configuration Notes for Source
+  - type: textarea
+    id: config-for-target
+    attributes:
+      label: 作为目标时候的数据库配置 Configuration Notes for Target
+  - type: textarea
+    id: config-for-target
+    attributes:
+      label: 类型映射表 Type Mappings
+  - type: textarea
+    id: config-for-target
+    attributes:
+      label: 版本历史 Change Log
