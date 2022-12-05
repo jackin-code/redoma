@@ -39,5 +39,18 @@ body:
         - label: 加载模型 source-feature-load-schema
         - label: 获取表 source-feature-table-names
         - label: DDL读取 source-feature-ddl
-        
-        
+  - type: checkboxes
+    id: feature-as-target
+    attributes:
+      label: 插件实现的目标功能 Implemented Features - as Target
+      options:
+        - label: 插入事件 target-feature-insert
+          required: true
+        - label: 删除事件 target-feature-delete
+        - label: 更新事件 target-feature-update
+        - label: 清除数据 target-feature-clear-data
+        - label: 创建表 target-feature-create-table
+        - label: 删除表 target-feature-drop-table
+        - label: 创建索引 target-feature-create-index
+        - label: 删除索引 target-feature-drop-index
+        - label: DDL读取 source-feature-ddl
