@@ -53,7 +53,7 @@ body:
         - label: 创建索引 target-feature-create-index
         - label: 删除索引 target-feature-drop-index
         - label: DDL读取 source-feature-ddl
-   - type: textarea
+  - type: textarea
     id: config-for-source
     attributes:
       label: 作为源时候的数据库配置 Configuration Notes for Source
