@@ -32,6 +32,12 @@ body:
         - label: 全量读 source-feature-full-sync
           required: true
         - label: 增量读 source-feature-cdc
-          required: true
         - label: 全量总数统计 source-feature-count
-          required: true
+        - label: 增量指定时间 source-feature-cdc-time-point
+        - label: 高级查询 source-feature-advance-query
+        - label: 查询索引 source-feature-load-index
+        - label: 加载模型 source-feature-load-schema
+        - label: 获取表 source-feature-table-names
+        - label: DDL读取 source-feature-ddl
+        
+        
