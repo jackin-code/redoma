@@ -1,9 +1,7 @@
 name: Bug Report
 description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
+title: "Connector Configuration Guide"
+labels: ["f"]
 body:
   - type: textarea
     id: Requirement
@@ -26,3 +24,14 @@ body:
       value: 'xxxxxxxxxxxxxxxx'
     validations:
       required: true
+  - type: checkboxes
+    id: feature-as-source
+    attributes:
+      label: 插件实现的源功能 Implemented Features - as Source
+      options:
+        - label: 全量读 source-feature-full-sync
+          required: true
+        - label: 增量读 source-feature-cdc
+          required: true
+        - label: 全量总数统计 source-feature-count
+          required: true
