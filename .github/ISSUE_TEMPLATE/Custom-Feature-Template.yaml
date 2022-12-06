@@ -4,9 +4,8 @@ title: ""
 labels: ["enhancement"]
 body:
   - type: markdown
-    id: title
     attributes:
-      label: Connector Plugin Guide
+      value: "#Connector Plugin Guide"
   - type: textarea
     id: basic-info
     attributes:
