@@ -1,4 +1,5 @@
 name: Connector Plugin Issue
+description: Connector Plugin Guide
 labels: ["enhancement"]
 body:
   - type: markdown
