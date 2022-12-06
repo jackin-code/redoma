@@ -1,8 +1,12 @@
 name: Bug Report
 description: File a bug report
-title: "Connector Configuration Guide"
-labels: ["bug"]
+title: ""
+labels: ["enhancement"]
 body:
+  - type: markdown
+    id: title
+    attributes:
+      label: Connector Plugin Guide
   - type: textarea
     id: basic-info
     attributes:
