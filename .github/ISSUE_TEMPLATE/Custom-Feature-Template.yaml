@@ -16,14 +16,12 @@ body:
     attributes:
       label: 已知问题列表 Known Issues
     validations:
-      required: true
   - type: checkboxes
     id: feature-as-source
     attributes:
       label: 插件实现的源功能 Implemented Features - as Source
       options:
         - label: 全量读 source-feature-full-sync
-          required: true
         - label: 增量读 source-feature-cdc
         - label: 全量总数统计 source-feature-count
         - label: 增量指定时间 source-feature-cdc-time-point
@@ -38,7 +36,6 @@ body:
       label: 插件实现的目标功能 Implemented Features - as Target
       options:
         - label: 插入事件 target-feature-insert
-          required: true
         - label: 删除事件 target-feature-delete
         - label: 更新事件 target-feature-update
         - label: 清除数据 target-feature-clear-data
