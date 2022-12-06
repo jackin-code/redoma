@@ -1,10 +1,9 @@
-name: Bug Report
-description: File a bug report
+name: Connector Plugin Issue
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
-      value: "#Connector Plugin Guide"
+      value: "# Connector Plugin Guide"
   - type: textarea
     id: basic-info
     attributes:
