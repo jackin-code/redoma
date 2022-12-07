@@ -1,6 +1,6 @@
 name: Connector Plugin Issue
 description: Connector Plugin Guide
-labels: ["enhancement"]
+labels: ["type/enhancement"]
 body:
   - type: markdown
     attributes:
