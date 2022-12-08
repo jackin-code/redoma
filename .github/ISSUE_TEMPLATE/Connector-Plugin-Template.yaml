@@ -2,12 +2,12 @@ name: Connector Plugin Issue
 description: Connector Plugin Guide
 labels: ["type/enhancement"]
 body:
-#   - type: textarea
-#     id: basic-info
-#     attributes:
-#       label: Basic Information
-#     validations:
-#       required: true
+  - type: textarea
+    id: basic-info
+    attributes:
+      label: Basic Information
+    validations:
+      required: true
 #   - type: textarea
 #     id: Known-Issues
 #     attributes:
