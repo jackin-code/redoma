@@ -2,9 +2,6 @@ name: Connector Plugin Issue
 description: Connector Plugin Guide
 labels: ["type/enhancement"]
 body:
-  - type: markdown
-    attributes:
-      value: "# Connector Plugin Guide"
 #   - type: textarea
 #     id: basic-info
 #     attributes:
