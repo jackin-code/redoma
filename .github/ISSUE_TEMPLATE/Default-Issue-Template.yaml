@@ -4,7 +4,7 @@ body:
   - type: textarea
     id: basic-info
     attributes:
-      label: ""
+      label: "Comment"
       placeholder: "Leave a comment"
     validations:
       required: true
