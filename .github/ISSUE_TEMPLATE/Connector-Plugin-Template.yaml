@@ -5,17 +5,17 @@ body:
   - type: markdown
     attributes:
       value: "# Connector Plugin Guide"
-  - type: textarea
-    id: basic-info
-    attributes:
-      label: Basic Information
-    validations:
-      required: true
-  - type: textarea
-    id: Known-Issues
-    attributes:
-      label: 已知问题列表 Known Issues
-    validations:
+#   - type: textarea
+#     id: basic-info
+#     attributes:
+#       label: Basic Information
+#     validations:
+#       required: true
+#   - type: textarea
+#     id: Known-Issues
+#     attributes:
+#       label: 已知问题列表 Known Issues
+#     validations:
   - type: checkboxes
     id: feature-as-source
     attributes:
@@ -44,19 +44,19 @@ body:
         - label: 创建索引 target-feature-create-index
         - label: 删除索引 target-feature-drop-index
         - label: DDL读取 source-feature-ddl
-  - type: textarea
-    id: config-for-source
-    attributes:
-      label: 作为源时候的数据库配置 Configuration Notes for Source
-  - type: textarea
-    id: config-for-target
-    attributes:
-      label: 作为目标时候的数据库配置 Configuration Notes for Target
-  - type: textarea
-    id: type-mappings
-    attributes:
-      label: 类型映射表 Type Mappings
-  - type: textarea
-    id: change-log
-    attributes:
-      label: 版本历史 Change Log
+#   - type: textarea
+#     id: config-for-source
+#     attributes:
+#       label: 作为源时候的数据库配置 Configuration Notes for Source
+#   - type: textarea
+#     id: config-for-target
+#     attributes:
+#       label: 作为目标时候的数据库配置 Configuration Notes for Target
+#   - type: textarea
+#     id: type-mappings
+#     attributes:
+#       label: 类型映射表 Type Mappings
+#   - type: textarea
+#     id: change-log
+#     attributes:
+#       label: 版本历史 Change Log
