@@ -1,0 +1,5 @@
+name: default issue
+description: default issue
+body:
+  - type: textarea
+    id: basic-info
