@@ -1,8 +1,8 @@
-name: default issue
-description: default issue
+name: Issue
+description: Issue
 body:
   - type: textarea
-    id: basic-info
+    id: issue-comment
     attributes:
       label: "Comment"
       placeholder: "Leave a comment"
