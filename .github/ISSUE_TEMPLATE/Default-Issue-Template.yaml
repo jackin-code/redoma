@@ -1,5 +1,5 @@
-name: Issue
-description: Issue
+name: Blank Issue
+description: Blank Issue
 body:
   - type: textarea
     id: issue-comment
