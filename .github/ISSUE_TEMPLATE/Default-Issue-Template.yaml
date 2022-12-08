@@ -3,3 +3,4 @@ description: default issue
 body:
   - type: textarea
     id: basic-info
+    label: "preview"
