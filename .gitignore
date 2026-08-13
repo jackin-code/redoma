@@ -1,0 +1,22 @@
+# MongoDB 运行期数据（不应纳入版本管理）
+mongo/data/
+docker/mongo/data/
+docker/mongo/logs/
+
+# 构建产物 / 大二进制
+*.jar
+target/
+build/
+
+# 日志
+*.log
+logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统 / 编辑器
+.DS_Store
+.idea/
+*.iml
